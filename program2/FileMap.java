@@ -52,6 +52,7 @@ public  class FileMap extends Mapper<LongWritable,Text,Text,Text>
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             context.getCounter(MYCOUNTER.FILE_NOT_FOUND).increment(1);
+            System.out.println(filePath.toString());
         } catch (IOException e) {
             context.getCounter(MYCOUNTER.SOME_OTHER_ERROR).increment(1);
             e.printStackTrace();

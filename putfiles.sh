@@ -1,4 +1,5 @@
 #!/bin/bash
+hadoop fs -mkdir /input
 hadoop fs -put -f BigData2018/score_5000000.txt /input/score_5000000.txt
 hadoop fs -put -f BigData2018/score_500000.txt /input/score_500000.txt
 hadoop fs -put -f BigData2018/score_5000.txt /input/score_5000.txt
